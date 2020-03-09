@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @dam.name %>
+</p>
+
+<p>
+  <strong>Region:</strong>
+  <%= @dam.region %>
+</p>
+
+<p>
+  <strong>Size:</strong>
+  <%= @dam.size %>
+</p>
+
+<p>
+  <strong>Dam created:</strong>
+  <%= @dam.dam_created %>
+</p>
+
+<%= link_to 'Edit', edit_dam_path(@dam) %> |
+<%= link_to 'Back', dams_path %>

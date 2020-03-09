@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Dams</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Dam Code</th>
+      <th>Name</th>
+      <th>Region</th>
+      <th>Size</th>
+      <th>Dam created</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @dams.each do |dam| %>
+      <tr>
+        <td><%= dam.dam_code %></td>
+        <td><%= dam.name %></td>
+        <td><%= dam.region %></td>
+        <td><%= dam.size %></td>
+        <td><%= dam.dam_created %></td>
+        <td><%= link_to 'Show', dam %></td>
+        <td><%= link_to 'Edit', edit_dam_path(dam) %></td>
+        <td><%= link_to 'Destroy', dam, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Dam', new_dam_path %>

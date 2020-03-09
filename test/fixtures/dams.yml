@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  region: MyString
+  size: MyString
+  dam_created: 2020-03-09 11:04:00
+
+two:
+  name: MyString
+  region: MyString
+  size: MyString
+  dam_created: 2020-03-09 11:04:00
